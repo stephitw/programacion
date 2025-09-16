@@ -3,6 +3,33 @@ Funciones
 */
 
 // Funciones
+// Una función es un bloque de código que realiza una tarea específica y que podemos invocar (llamar).
+
+// Ventaja principal: escribir código limpio, modular y reutilizable.
+
+// Sintaxis básica:
+
+// function myFunction() {
+//   console.log("Hola función");
+// }
+// myFunction(); // se invoca
+
+// Podemos repetir llamadas manualmente o dentro de bucles
+// Parámetros: permiten que la función reciba datos externos.
+
+// function saluda(name) {
+//   console.log("Hola", name);
+// }
+// saluda("Steph");
+
+
+// Funciones anónimas: no tienen nombre, se asignan a variables/constantes.
+// Arrow functions: sintaxis más corta, introducidas en ES6. Útiles para funciones simples, especialmente en una sola línea.
+// Valores por defecto en parámetros evitan errores si no pasamos argumentos.
+// Return: en vez de imprimir, devuelve un valor para reutilizarlo.
+// Funciones anidadas: funciones dentro de otras (importante el scope).
+// Funciones de orden superior: reciben otras funciones como parámetros (ej. map, forEach).
+// forEach: método de arrays que recorre cada elemento ejecutando una función.
 
 // Simple
 
