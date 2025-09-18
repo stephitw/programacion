@@ -1,14 +1,22 @@
 /*
-Clases
+Clases = una plantilla que define propiedades (datos) y métodos (comportamientos).
+
 Una clase es una plantilla para crear objetos (instancias).
+
 Introducidas en ES6 → sintaxis más clara que funciones constructoras.
+
 Definen propiedades (en el constructor) y métodos.
+
 Diferencias con objetos:
-El objeto es único y cerrado.
-La clase permite crear múltiples instancias con la misma estructura.
+
+El objeto es único y cerrado. pero La clase permite crear múltiples instancias con la misma estructura.
+
 Se pueden añadir valores por defecto, métodos, y propiedades privadas (con #).
+
 Uso de this para referirse a la instancia.
+
 Getters y setters: permiten controlar el acceso/modificación de propiedades.
+
 Métodos estáticos: se llaman desde la clase, sin necesidad de instanciar (Math.max es un ejemplo).
 */
 
@@ -16,6 +24,7 @@ Métodos estáticos: se llaman desde la clase, sin necesidad de instanciar (Math
 
 class Person {
 
+    //constructor es una función especial que nos permite definir cual la estructura inicial de las propiedades de la Persona
     constructor(name, age, alias) {
         this.name = name
         this.age = age
@@ -140,12 +149,7 @@ person6.bank = "new IBAN123456789"
 
 /*
 Clase 38 - Herencia de clases
-Herencia: una clase puede extender otra con extends.
-Hereda propiedades y métodos de la clase padre.
-super() permite reutilizar el constructor o llamar a métodos de la clase padre.
-Se pueden sobrescribir métodos para cambiar su comportamiento.
-Ejemplo: clase Animal con método sound(). Subclases Perro y Pez heredan pero pueden redefinir (Perro → woof!).
-Ventaja: reutilización de código y evitar duplicación.
+Vídeo: https://youtu.be/1glVfFxj8a4?t=17999
 */
 
 // Herencia
