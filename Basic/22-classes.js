@@ -149,7 +149,6 @@ person6.bank = "new IBAN123456789"
 
 /*
 Clase 38 - Herencia de clases
-Vídeo: https://youtu.be/1glVfFxj8a4?t=17999
 */
 
 // Herencia
