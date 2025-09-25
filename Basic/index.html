@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class GetSetPerson {
+
+    #name
+    #age
+    #alias
+    #bank
+
+    constructor(name, age, alias, bank) {
+        this.#name = name
+        this.#age = age
+        this.#alias = alias
+        this.#bank = bank
+    }
+
+    // get name() { //para acceder a una propiedad
+    //     return this.#name
+    // }
+
+    // Luego el bank
+    // set bank(bank) {
+    //     this.#bank = bank
+    // }
+
+}
+
+ let person6 = new GetSetPerson("Steph", 37, "EspaiDev", "IBAN123456789")
+
+document.write(person6)
+console.log(person6)
+document.write(person6.name)
+    </script>
+</body>
+</html>
