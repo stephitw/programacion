@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Demo JSON → Tabla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 20px; }
+    .toolbar { display: flex; gap: 8px; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+    th { background: #f7f7f7; }
+    .status { color: #666; margin: 6px 0 12px; }
+  </style>
+  <!-- Version más compleja<style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    body { margin: 24px; }
+    .toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .btn { padding: 8px 12px; border: 1px solid #ccc; background: #f6f6f6; cursor: pointer; border-radius: 6px; }
+    .btn:disabled { opacity: .6; cursor: not-allowed; }
+    .input { padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px; min-width: 240px; }
+    .status { min-height: 20px; color: #555; }
+    .spinner { display: inline-block; width: 16px; height: 16px; border-radius: 50%;
+      border: 2px solid #ddd; border-top-color: #333; animation: spin 1s linear infinite; vertical-align: -3px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #e5e5e5; padding: 8px 10px; text-align: left; }
+    th { background: #fafafa; cursor: pointer; position: relative; user-select: none; }
+    th .arrow { position: absolute; right: 8px; opacity: .6; }
+    .muted { color: #888; }
+  </style> -->
+</head>
+<body>
+  <h1>Listado desde JSON</h1>
+    <div class="toolbar">
+    <!-- 1) Botón para cargar el JSON -->
+    <button id="btnCargar">Cargar JSON</button>
+    <!-- 2) Caja para filtrar texto -->
+    <input id="buscador" type="search" placeholder="Filtrar..." />
+  </div>
+
+  <!-- Mensajes para el alumno (cargando, error, etc.) -->
+  <div id="status" class="status"></div>
+
+  <!-- Tabla vacía. La llenaremos desde JavaScript -->
+  <table id="tabla">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Nuestro script -->
+  <script src="33-app01.js"></script>
+
+<!-- Version mas compleja en 33-app.js -->
+  <!-- <div class="toolbar">
+    <button id="btnCargar" class="btn">Cargar JSON</button>
+    <input id="buscador" class="input" type="search" placeholder="Filtrar por texto…" />
+    <span id="contador" class="muted"></span>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <div style="overflow:auto">
+    <table id="tabla">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./33-app.js"></script> -->
+</body>
+</html>
